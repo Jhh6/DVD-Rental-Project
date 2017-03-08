@@ -1,0 +1,15 @@
+E:\School\Enterprise\Project\Project\bin\Debug\Project.dll
+E:\School\Enterprise\Project\Project\bin\Debug\Project.pdb
+E:\School\Enterprise\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+E:\School\Enterprise\Project\Project\obj\Debug\Project.dll
+E:\School\Enterprise\Project\Project\obj\Debug\Project.pdb
+E:\School\Enterprise\SJJ Site\Project\Project\bin\Debug\Project.dll
+E:\School\Enterprise\SJJ Site\Project\Project\bin\Debug\Project.pdb
+E:\School\Enterprise\SJJ Site\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+E:\School\Enterprise\SJJ Site\Project\Project\obj\Debug\Project.dll
+E:\School\Enterprise\SJJ Site\Project\Project\obj\Debug\Project.pdb
+E:\School\Enterprise\SJJ-Hello\SJJ Site\SJJ-master\Project\Project\bin\Debug\Project.dll
+E:\School\Enterprise\SJJ-Hello\SJJ Site\SJJ-master\Project\Project\bin\Debug\Project.pdb
+E:\School\Enterprise\SJJ-Hello\SJJ Site\SJJ-master\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+E:\School\Enterprise\SJJ-Hello\SJJ Site\SJJ-master\Project\Project\obj\Debug\Project.dll
+E:\School\Enterprise\SJJ-Hello\SJJ Site\SJJ-master\Project\Project\obj\Debug\Project.pdb
