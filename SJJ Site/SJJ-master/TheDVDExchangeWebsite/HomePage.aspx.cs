@@ -25,15 +25,15 @@ public partial class HomePage : System.Web.UI.Page
         skwal.closeDatabase();
 
         skwal.openDatabase();
-
+        
         if (ErrorMessage.printMe)
         {
-            Response.Write("<p>" + em.returnMessage() + "</p>");
-            ErrorMessage.printMe = false;
+            Response.Write(em.returnMessage());
+            ErrorMessage.printMe = false; 
         }
 
         skwal.closeDatabase();
-
+       
 
 
 
@@ -46,11 +46,11 @@ public partial class HomePage : System.Web.UI.Page
 
         }
         //Opens database Connection
-        //    dbConnection.Open();
+    //    dbConnection.Open();
         //Sets the session to the dbConnection
-        //   Session["DatabaseConnection"] = dbConnection;
+     //   Session["DatabaseConnection"] = dbConnection;
         //Closes dbConnection
-        //   dbConnection.Close();
+     //   dbConnection.Close();
 
     }
     protected void LoadSignUpPage(object sender, EventArgs e)
@@ -95,27 +95,5 @@ public partial class HomePage : System.Web.UI.Page
             ErrorMessage.printMe = true;
             Response.Redirect("HomePage.aspx");
         }
-    }
-
-    protected void LogoutHandle(object sender, EventArgs e)
-    {
-        if (SQLConnections.loggedIn)
-        {
-            SQLConnections.loggedIn = false;
-            ErrorMessage.message = "You have succesfully logged out!";
-            ErrorMessage.printMe = true;
-
-            Response.Redirect("HomePage.aspx");
-        }
-        else
-        {
-           
-            ErrorMessage.message = "You are not even logged in!";
-            ErrorMessage.printMe = true;
-
-            Response.Redirect("HomePage.aspx");
-
-        }
-
     }
 }

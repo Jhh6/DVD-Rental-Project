@@ -29,12 +29,12 @@ public partial class SignUpPage : System.Web.UI.Page
     public SQLConnections skwal = new SQLConnections();
 
     public SqlCommand cmd = new SqlCommand();
-    SqlConnection dbConnection = new SqlConnection("Data Source=stusql;Initial Catalog=TheDVDExchangeDatabase ;Integrated Security=true");
-
+    SqlConnection dbConnection = new SqlConnection();
+    
     protected void Page_Load(object sender, EventArgs e)
     {
 
-     //   dbConnection.Open();
+        skwal.openDatabase();
 
        
         //Sets the dbConnection to the dbConnection Session
@@ -48,7 +48,7 @@ public partial class SignUpPage : System.Web.UI.Page
         //Sets the string variables to the TextBox values
         usernametext = usernameTextBox.Text;
        
-      //      Response.Redirect("SignUpPage.aspx");
+            Response.Redirect("SignUpPage.aspx");
        
         passwordtext = passwordTextBox.Text;
         emailtext = EmailTextBox.Text;
@@ -72,6 +72,7 @@ public partial class SignUpPage : System.Web.UI.Page
        //Closes database connection
         dbConnection.Close();
 
-        Response.Redirect("HomePage.aspx");
+        Response.Write("Account created!");
+
     }
 }
