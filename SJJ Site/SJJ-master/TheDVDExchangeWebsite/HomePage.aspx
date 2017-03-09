@@ -11,11 +11,6 @@
             width: 1250px;
             height: 300px;
         }
-
-        p
-        {
-            color:white;
-        }
         </style>
 
     <link rel="stylesheet" href="StyleSheet.css" />
@@ -37,8 +32,6 @@
            <asp:Button ID="SignUpPageButton" runat="server" Text="Sign Up!" OnClick="LoadSignUpPage"/>
            <asp:Button ID="LoginPageButton" runat="server" Text="Login" OnClick="LoadLoginPage"/>
            <asp:Button ID="BrowsePageButton" runat="server" Text="Browse" OnClick="LoadBrowsePage"/>
-           <asp:Button ID="Logout" runat="server" Text="Logout" OnClick="LogoutHandle"/>
-
     </div>
 
 
