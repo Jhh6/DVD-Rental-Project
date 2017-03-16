@@ -1,0 +1,5 @@
+F:\School\DVDRental\Project\Project\bin\Debug\Project.dll
+F:\School\DVDRental\Project\Project\bin\Debug\Project.pdb
+F:\School\DVDRental\Project\Project\obj\Debug\Project.csprojResolveAssemblyReference.cache
+F:\School\DVDRental\Project\Project\obj\Debug\Project.dll
+F:\School\DVDRental\Project\Project\obj\Debug\Project.pdb
