@@ -1,2 +1,0 @@
-# SJJ
-Enterprise Applications Project

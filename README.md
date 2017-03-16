@@ -1,2 +1,0 @@
-# DVD-Rental-Project
-project
