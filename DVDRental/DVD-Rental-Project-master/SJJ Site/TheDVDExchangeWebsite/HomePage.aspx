@@ -1,4 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="HomePage.aspx.cs" Inherits="HomePage" %>
+
 <!DOCTYPE html>
 
     
@@ -41,19 +42,19 @@
     </div>
 
 
-        <hr style="width:1664px; margin-left: 0px;" />
+        <hr style="width:1690px; margin-left: 0px;" />
            
      <h1 style="text-align:center">
        Welcome to the DVD Exchange where you can make connections, trade movies, watch movies, and blog about your thoughts! Check out this weeks featured movies!
     </h1>
         <br />
-        <hr style="width:1665px; margin-left: 0px;" />
+        <hr style="width:1690px; margin-left: 0px;" />
         <br />
          <h2 style="text-align:center">
                 Featured Horror Movies
          </h2>
         <br />
-        <hr style="width:1664px; margin-left: 0px;" />
+        <hr style="width:1690px; margin-left: 0px;" />
 
 
             <div id="first" style="height: 220px; width: 280px">
@@ -63,7 +64,7 @@
       
              <img src ="forestcover.jpg" style="width:142px;height:168px;" runat="server"/>
 
-            <asp:Button ID="Button1" runat="server" Text="Add to Cart" />
+            <asp:Button ID="Button1" runat="server" Text="Add to Cart" OnClick="Button1_Click" />
 
          <div id="desc1" style="width:150px; height:132px;">
                     <h4 >
@@ -75,6 +76,11 @@
   
         </div>
 
+
+        
+
+
+
         <div id="second" style="height: 220px; width: 280px">
             <h3 style="text-align:left">
              The Conjuring 2 (2016, R)
@@ -82,7 +88,7 @@
       
              <img src ="conjuringcover.jpg" style="width:142px;height:168px;" runat="server"/>
 
-        <asp:Button ID="Button2" runat="server" Text="Add to Cart" />
+        <asp:Button ID="Button2" runat="server" Text="Add to Cart" OnClick="Button2_Click"/>
 
                 <div id="desc" style="width:150px; height:132px;">
                     <h4 >
@@ -102,7 +108,7 @@
       
              <img src ="getout.jpg" style="width:142px;height:168px;" runat="server"/>
 
-        <asp:Button ID="Button3" runat="server" Text="Add to Cart" />
+        <asp:Button ID="Button3" runat="server" Text="Add to Cart" OnClick="Button3_Click" />
 
                 <div id="desc2" style="width:150px; height:132px;">
                     <h4 >
@@ -120,7 +126,7 @@
       
              <img src ="unfriendedcover.jpg" style="width:142px;height:168px;" runat="server"/>
 
-        <asp:Button ID="Button4" runat="server" Text="Add to Cart" />
+        <asp:Button ID="Button4" runat="server" Text="Add to Cart" OnClick="Button4_Click"/>
 
                 <div id="desc3" style="width:150px; height:132px;">
                     <h4 >
@@ -139,7 +145,7 @@
       
              <img src ="sinister2cover.jpg" style="width:142px;height:168px;" runat="server"/>
 
-        <asp:Button ID="Button5" runat="server" Text="Add to Cart" />
+        <asp:Button ID="Button5" runat="server" Text="Add to Cart" OnClick="Button5_Click"/>
 
                 <div id="desc4" style="width:150px; height:132px;">
                     <h4 >
@@ -150,9 +156,10 @@
                 </div>
         </div>
 
+
 </form>
         
     
 
      </body>
-
+</html>
