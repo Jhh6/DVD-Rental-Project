@@ -11,6 +11,10 @@ namespace Project
 {
     public class Movie
     {
+        public string movieName;
+        public string movieImage;
+        public string movieDescription;
+        public string movieRating;
         public Movie()
         {
             //
