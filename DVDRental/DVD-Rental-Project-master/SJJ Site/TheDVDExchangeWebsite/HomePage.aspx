@@ -41,19 +41,19 @@
     </div>
 
 
-        <hr style="width:1690px; margin-left: 0px;" />
+        <hr style="width:1664px; margin-left: 0px;" />
            
      <h1 style="text-align:center">
        Welcome to the DVD Exchange where you can make connections, trade movies, watch movies, and blog about your thoughts! Check out this weeks featured movies!
     </h1>
         <br />
-        <hr style="width:1690px; margin-left: 0px;" />
+        <hr style="width:1665px; margin-left: 0px;" />
         <br />
          <h2 style="text-align:center">
                 Featured Horror Movies
          </h2>
         <br />
-        <hr style="width:1690px; margin-left: 0px;" />
+        <hr style="width:1664px; margin-left: 0px;" />
 
 
             <div id="first" style="height: 220px; width: 280px">
@@ -155,4 +155,4 @@
     
 
      </body>
-</html>
+

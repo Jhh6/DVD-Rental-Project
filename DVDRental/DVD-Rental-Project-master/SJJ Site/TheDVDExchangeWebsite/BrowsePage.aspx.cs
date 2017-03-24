@@ -11,4 +11,15 @@ public partial class SJJ_Site_TheDVDExchangeWebsite_BrowsePage : System.Web.UI.P
     {
 
     }
+
+    protected void ImageButton_Click(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("HomePage.aspx");
+    }
+
+    protected void ImageButton_Click2(object sender, ImageClickEventArgs e)
+    {
+        Response.Redirect("HomePage.aspx");
+    }
+
 }
