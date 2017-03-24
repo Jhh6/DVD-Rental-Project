@@ -2,7 +2,7 @@
             {
                 background-image: url("Background.jpg")
             }
-#second
+        #second
        {
         position: absolute;
         top: 630px;
@@ -63,6 +63,25 @@
     top: 35px;
     left: 148px;
 }
+#HorrorButton 
+{
+    position:absolute;
+    top: 517px;
+    left: 10px;
+}
 
+#ComedyHolder 
+{
+    position:absolute;
+    top: 750px;
+    left: 10px;
+}
+
+#ComedyButton 
+{
+    position:absolute;
+    top: 40px;
+    left: 0px;
+}
 
 

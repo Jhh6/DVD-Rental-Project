@@ -99,7 +99,7 @@ public partial class HomePage : System.Web.UI.Page
         }
         if (!SQLConnections.loggedIn)
         {
-            ErrorMessage.message = "Print Me!";
+            ErrorMessage.message = "You are not logged in!";
             ErrorMessage.printMe = true;
             Response.Redirect("HomePage.aspx");
         }
