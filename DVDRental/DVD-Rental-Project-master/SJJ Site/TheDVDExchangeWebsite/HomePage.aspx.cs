@@ -30,6 +30,10 @@ public partial class HomePage : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+
+        Session["movieID"] = 0;
+        
+
         skwal.closeDatabase();
 
         skwal.openDatabase();
@@ -99,7 +103,7 @@ public partial class HomePage : System.Web.UI.Page
         }
         if (!SQLConnections.loggedIn)
         {
-            ErrorMessage.message = "You are not logged in!";
+            ErrorMessage.message = "Print Me!";
             ErrorMessage.printMe = true;
             Response.Redirect("HomePage.aspx");
         }
@@ -125,5 +129,65 @@ public partial class HomePage : System.Web.UI.Page
 
         }
 
+    }
+
+    protected void Button1_Click(object sender, EventArgs e)
+    {
+        if (SQLConnections.loggedIn)
+        {
+            Session["movieID"] = 12;
+
+            Session["userID"] = SQLConnections.userID;
+        Response.Redirect("CartPage.aspx");
+
+        }
+    }
+
+    protected void Button2_Click(object sender, EventArgs e)
+    {
+        if (SQLConnections.loggedIn)
+        {
+            Session["movieID"] = 4;
+
+            Session["userID"] = SQLConnections.userID;
+            Response.Redirect("CartPage.aspx");
+
+        }
+    }
+
+    protected void Button3_Click(object sender, EventArgs e)
+    {
+        if (SQLConnections.loggedIn)
+        {
+            Session["movieID"] = 9;
+
+            Session["userID"] = SQLConnections.userID;
+            Response.Redirect("CartPage.aspx");
+
+        }
+    }
+
+    protected void Button4_Click(object sender, EventArgs e)
+    {
+        if (SQLConnections.loggedIn)
+        {
+            Session["movieID"] = 15;
+
+            Session["userID"] = SQLConnections.userID;
+            Response.Redirect("CartPage.aspx");
+
+        }
+    }
+
+    protected void Button5_Click(object sender, EventArgs e)
+    {
+        if (SQLConnections.loggedIn)
+        {
+            Session["movieID"] = 2;
+
+            Session["userID"] = SQLConnections.userID;
+            Response.Redirect("CartPage.aspx");
+
+        }
     }
 }
