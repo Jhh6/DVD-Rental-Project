@@ -38,6 +38,7 @@
            <asp:Button ID="LoginPageButton" runat="server" Text="Login" OnClick="LoadLoginPage"/>
            <asp:Button ID="BrowsePageButton" runat="server" Text="Browse" OnClick="LoadBrowsePage"/>
            <asp:Button ID="Logout" runat="server" Text="Logout" OnClick="LogoutHandle"/>
+           <asp:Button ID="Cart" runat="server" Text="Cart" OnClick="Cart_Click"/>
 
     </div>
 

@@ -190,4 +190,14 @@ public partial class HomePage : System.Web.UI.Page
 
         }
     }
+
+    protected void Cart_Click(object sender, EventArgs e)
+    {
+        if (SQLConnections.loggedIn)
+        {
+            Session["userID"] = SQLConnections.userID;
+            Response.Redirect("ActualCartPage.aspx");
+
+        }
+    }
 }
