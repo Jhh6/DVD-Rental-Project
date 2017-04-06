@@ -16,9 +16,11 @@ namespace Project
 
         public static bool loggedIn = false;
         public string hey;
-        static SqlConnection dbConnection = new SqlConnection("Data Source=stusql;Initial Catalog=TheDVDExchangeDatabase ;Integrated Security=true");
+        public static SqlConnection dbConnection = new SqlConnection("Data Source=stusql;Initial Catalog=TheDVDExchangeDatabase ;Integrated Security=true");
         public SqlCommand cmd = new SqlCommand();
         public SqlDataReader reader;
+        public SqlDataReader reader2;
+
         public static int userID = 0;
         public string userIDHolder;
         public SQLConnections()
@@ -62,6 +64,15 @@ namespace Project
             dbConnection.Close();
         }
 
+        public void executeCartList(int movieID)
+        {
+           
+        
+
+          
+        }
+
+
         public bool executeLoginCheckCommand(string usernameText, string passwordText)
         {
 
@@ -71,14 +82,11 @@ namespace Project
 
             while (reader.Read())
             {
-                // Response.Write(reader["username"]);
-                // Response.Write(reader["userpassword"]);
-                // Response.Write(reader["useremail"]);
+              
                 if (reader.GetValue(1).ToString() == usernameText && reader.GetValue(2).ToString() == passwordText)
                 {
                     SQLConnections.userID = reader.GetInt32(0);
 
-                  //  userID = Convert.ToInt32(userIDHolder);
 
                    
                     ErrorMessage.message = "<p>You have been succesfully logged in!</p>";
