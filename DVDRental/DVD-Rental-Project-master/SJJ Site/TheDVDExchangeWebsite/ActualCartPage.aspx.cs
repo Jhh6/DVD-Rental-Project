@@ -39,6 +39,7 @@ public partial class SJJ_Site_TheDVDExchangeWebsite_ActualCartPage : System.Web.
             skwal.reader2.Close();
 
         }
+        SQLConnections.dbConnection.Close();
 
 
 
