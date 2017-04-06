@@ -7,6 +7,7 @@ using System.Web.UI.WebControls;
 using Project;
 public partial class SJJ_Site_TheDVDExchangeWebsite_CartPage : System.Web.UI.Page
 {
+    public List<int> movieIDs = new List<int>();
     public SQLConnections skwal = new SQLConnections();
 
     private int userID;
@@ -22,9 +23,20 @@ public partial class SJJ_Site_TheDVDExchangeWebsite_CartPage : System.Web.UI.Pag
         userID = Convert.ToInt32(Session["userID"]);
         movieID = Convert.ToInt32(Session["movieID"]);
 
-        
 
-        skwal.addMovieToCart(userID,movieID);
 
+
+        skwal.addMovieToCart(userID, movieID);
+
+    }
+       
+
+       
+
+    
+
+    protected void Hello_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("HomePage.aspx");
     }
 }
